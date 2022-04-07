@@ -25,3 +25,21 @@ a=7;
 /*"use strict";
 n=8;
 document.write(n);*/
+
+const student={
+    name:"Ram",
+    class:"3",
+    sum:function(){
+        var res=12+33;
+        console.log(res);
+        console.log(this);
+
+        function child(){
+            var name="avi";
+            console.log(name);
+            console.log(this)
+        }
+        child();
+        }
+    }
+student.sum();*/
