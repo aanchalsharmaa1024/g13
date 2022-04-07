@@ -3,3 +3,24 @@ let sum = (a,b) =>{
 }
 alert = sum(2,5);
 document.write(alert)
+
+
+let callRates = prompt("What is the number of calls?");
+const fixedRent = 100;
+
+let billTotal = (calls) =>{
+    let totalcall;
+    let bill;
+    if(calls>100){
+        totalcall = calls-100;
+        calls = calls-totalcall;
+        bill=2*totalcall+1*calls+fixedRent;
+    }else{
+        bill=1*calls+fixedRent
+    }
+    return bill;
+}
+let resBill = billTotal(callRates);
+document.write(resBill);
+
+
