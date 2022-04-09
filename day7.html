@@ -53,4 +53,14 @@ function first(){//outer func
     function Second(){// second function ko declare bhi first func ke andr hi kiya..so it is inner func
         var data3="let's understand scope chain";
         console.log(data1+data2+data3);
-    }
+    /
+    //new code
+    is_string = function(input) {
+  if (Object.prototype.toString.call(input) === '[object String]')
+    return true;
+  else
+    return false;
+    };
+console.log(is_string('w3resource'));
+console.log(is_string([1, 2, 4, 0]));
+//end of code
